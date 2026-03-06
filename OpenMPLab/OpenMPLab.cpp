@@ -368,29 +368,6 @@ PiResult EstimatePiParallelCritical(double target_error = 1e-6, size_t batch_siz
 }
 
 
-#include <iostream>
-#include <vector>
-#include <random>
-#include <sstream>
-#include <stdexcept>
-#include <algorithm>
-#include <cmath>
-#include <chrono>
-#include <iomanip>
-#include <ctime>
-#include <omp.h>
-#include <limits>
-#include <thread>
-
-// ========================================================================
-// === КЛАСС МАТРИЦЫ (без изменений) ===
-// ========================================================================
-// ... (предыдущий код класса Matr остаётся без изменений) ...
-
-// ========================================================================
-// === СОРТИРОВКА ПРОСТЫМ ВЫБОРОМ (только int) ===
-// ========================================================================
-
 // Вспомогательная структура для результатов сортировки
 struct SortResult {
     std::vector<int> sorted_data;
